@@ -1,1 +1,52 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designer Protik</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('skills')">Skills</button>
+        <button onclick="showPage('location')">Location</button>
+        <button onclick="showPage('contact')">Contact</button>
+    </nav>
+    
+    <div id="content">
+        <div id="home" class="page">
+            <h1>Welcome to Graphic Designer Protik</h1>
+        </div>
+        <div id="skills" class="page" style="display:none;">
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Logo Designer</h3>
+                <img src="logo-designer.jpg" alt="Logo Designer">
+            </div>
+            <div class="skill">
+                <h3>Graphic Designer</h3>
+                <img src="graphic-designer.jpg" alt="Graphic Designer">
+            </div>
+            <div class="skill">
+                <h3>Review Master</h3>
+                <img src="review-master.jpg" alt="Review Master">
+            </div>
+        </div>
+        <div id="location" class="page" style="display:none;">
+            <h2>Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.746267158536!2d90.35630251542297!3d23.81031568458605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c73c317d5d0d%3A0x84f8a7380b0e9a0b!2sDhaka!5e0!3m2!1sen!2sbd!4v1631467510986!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="contact" class="page" style="display:none;">
+            <h2>Contact</h2>
+            <p>Phone: <a href="tel:+0123456789">+0123456789</a></p>
+            <p>WhatsApp: <a href="https://wa.me/1234567890">Chat on WhatsApp</a></p>
+            <p>Telegram: <a href="https://t.me/yourtelegramusername">Chat on Telegram</a></p>
+            <p>Facebook: <a href="https://facebook.com/yourfacebookprofile">Visit Facebook Profile</a></p>
+        </div>
+    </div>
+    
+    <canvas id="effectCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
